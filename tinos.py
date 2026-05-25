@@ -1,7 +1,18 @@
+import sys
+import subprocess
+
+def install_and_import(package):
+    try:
+        __import__(package)
+    except ImportError:
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+
+install_and_import('pywebview')
+
 from tkinter import *
 from tkinter import ttk
 import webview
- 
+
 root = Tk()
 root.title("METANIT.COM")
 root.attributes("-fullscreen", True)
@@ -14,7 +25,7 @@ style.configure("TButton", background="Silver", foreground="Black", font=("Arial
 def dismiss(root):
     root.grab_release() 
     root.destroy()
- 
+
 def click():
     window = Toplevel()
     window.title("РБК(Российская библиотека кодов)")
