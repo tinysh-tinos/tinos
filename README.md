@@ -1,11 +1,6 @@
-# TiNOS (OS on Python, C#)  GUIDE
+# <img src="https://skillicons.dev/icons?i=python" height="40" alt="Python" /> TiNOS (OS on Python)  GUIDE
 
 # PYTHON GUIDE
 
 1. Install Python
 2. Launch TinOS
-
-# C# GUIDE
-1. Install .NET SDK
-2. Open folder with Main CS File in terminal
-3. Enter into the terminal 'dotnet tinos.cs'
